@@ -406,10 +406,11 @@ learning stage, we train the pre-trained visual model and the policy backbone jo
         <h2 class="title is-3">Real-World Results</h2>
         <div class="content has-text-justified">
           <p>
-           FVP mainly consists of two parts: a 3D visual encoder and a point cloud diffusion model. The 3D visual encoder transforms the point cloud
-at time step t into the latent visual representation, and the diffusion model uses the latent visual
-representation and robotic actions to predict the point cloud at step time t + 1. During the policy
-learning stage, we train the pre-trained visual model and the policy backbone jointly.
+           "DP3+FVP" and "RISE+FVP" denote the application of FVP to pretrain the visual models from DP3 and RISE,
+       respectively. "DP3" indicates that the visual model within DP3 has not undergone pretraining. "DP3+PointMAE", "DP3+STRL", and
+"DP3+C2P" signify the utilization of PointMAE, STRL, and C2P to pre-train the visual model from DP3. The numbers before the comma
+represent the performance using in-domain datasets for pre-training, while the numbers after the comma represent the performance using
+out-of-domain datasets (RoboMind) for pre-training.
 
            </p>
             <p> 
